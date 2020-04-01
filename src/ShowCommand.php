@@ -2,24 +2,15 @@
 
 namespace Acme;
 
-use Symfony\Component\Console\Command\Command;
 use Symfony\Component\Console\Helper\Table;
 use Symfony\Component\Console\Input\InputInterface;
 use Symfony\Component\Console\Output\OutputInterface;
 
+/**
+ * Class ShowCommand
+ * @package Acme
+ */
 class ShowCommand extends Command {
-
-    private $database;
-    /**
-     * ShowCommand constructor.
-     * @param DatabaseAdapter $database
-     */
-    public function __construct(DatabaseAdapter $database)
-    {
-        $this->database = $database;
-
-        parent::__construct();
-    }
 
     public function configure()
     {
@@ -40,6 +31,7 @@ class ShowCommand extends Command {
 
     /**
      * @param OutputInterface $output
+     * @return int
      */
     private function showTasks(OutputInterface $output)
     {
@@ -54,5 +46,6 @@ class ShowCommand extends Command {
         $table->setHeaders(['Id', 'Description'])
               ->setRows($tasks)
               ->render();
+        return 1;
     }
 }
