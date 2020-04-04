@@ -9,7 +9,8 @@ use Symfony\Component\Console\Output\OutputInterface;
  * Class ShowCommand
  * @package Acme
  */
-class ShowCommand extends Command {
+class ShowCommand extends Command
+{
 
     public function configure()
     {

@@ -12,7 +12,7 @@ class DatabaseAdapter
      * DatabaseAdapter constructor.
      * @param PDO $connection
      */
-    function __construct(PDO $connection)
+    public function __construct(PDO $connection)
     {
         $this->connection = $connection;
     }
