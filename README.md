@@ -1,5 +1,6 @@
 # Command Line Task App
 
+![cli-task-app](cli-task-app.png)
 
 ### Simple database setup using sqlite3
 
