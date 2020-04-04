@@ -1,11 +1,19 @@
-Simple database setup using sqlite3
+# Command Line Task App
 
+
+### Simple database setup using sqlite3
+
+Enter sqlite3 with while creating your sqlite file for example. `sqlite3 db.sqlite`
 ```
 create TABLE tasks(
     id INTEGER PRIMARY KEY,
     description TEXT NOT NULL
 );
 ```
+
+
+
+### Console Commands
 
 Commands are as follows these can by found by running `./tasks list`
 
@@ -17,4 +25,4 @@ Commands are as follows these can by found by running `./tasks list`
   show      Show all tasks
 ```
 
-After adding or completing a task, the task list will be reshown.
+After adding or completing a task, the task list will be re-listed.
